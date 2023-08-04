@@ -99,3 +99,8 @@ h1 {
 .autoplay-class {
   border-bottom: 1px solid rgb(224, 224, 224);
 }
+
+.mode {
+  background-color: white;
+  color: black;
+}
