@@ -60,6 +60,7 @@
     <section>
       <div class="container-fluid">
         <h2>Trending Now</h2>
+        <button id="btn" class="bg-light">Night Mode</button>
         <div class="row ms-1">
           <div class="w-10 gx-2 col-12 col-sm-4 col-md-6 col-lg-2 mb-sm-2 mt-2">
             <div class="card">
@@ -247,5 +248,18 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const btn = document.getElementById("btn");
+
+      const toggleNightMode = () => {
+        btn.addEventListener("click", () => {
+          const body = document.getElementsByTagName("body")[0];
+          body.classList.toggle("mode");
+          console.log(body);
+        });
+      };
+      toggleNightMode();
+    </script>
   </body>
 </html>
